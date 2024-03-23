@@ -34,6 +34,15 @@ nav a {
 nav a:hover {
   background-color: #142340;
 }
+
+/* Logo Image */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 100px; /* Adjust based on your logo's size */
+}
+
 .container {
   max-width: 800px;
   margin: 20px auto;
