@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+</head>
+<body>
+
+    <!--Header from header.html-->
+    <head>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function() {
+            $("#includeHtml").load("header.html");
+         });
+      </script>
+    </head>
+
+    <div id="includeHtml"></div>
+    <!--End of Header-->
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <img src="/images/profile.png" alt="My Profile Picture" class="profile-img">
+            <p>I am a student at Eastern Mennonite University pursuing my BS in Engineering. At EMU, I am a member of our Shell Eco Marathon team as well as first chair cellist of the EMU Chamber Orchestra.</p>
+            <div class="links">
+                <p>I am a student at <a href="https://www.emu.edu">EMU</a> and an intern at <a href="https://www.jzengr.com">JZEngineering</a>.</p>
+                <p>Connect with me on <a href="https://www.linkedin.com/in/micaiah-landis-631685273">LinkedIn</a>.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
