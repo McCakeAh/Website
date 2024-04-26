@@ -5,17 +5,23 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Micaiah Landis</title>
-      <link rel="icon" type="image/x-icon" href="/images/home/logo.png">
     </head>
+
+  <script>
+     if (screen.width <= 768) {
+         window.location.href = "index_mobile.html"; // Redirect to mobile site
+     }
+  </script>
+
 
 <body style="background-color:#adb0b8">
 
-    <!--Header from header.html-->
+    <!--Start of header.html-->
     <head>
       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script>
          $(function() {
-            $("#includeHtml").load("header.html");
+          $("#includeHtml").load("header.html");
          });
       </script>
     </head>
@@ -41,13 +47,13 @@
             as well as first chair cellist of the EMU Chamber Orchestra.</p>
 
             <p>I enjoy designing and 3D printing and have two printers including one I built. 
-            I enjoy building Li-ion Battery packs for varius electrical devices and desiging custom PCB's for 
-            small electrical uses.
-            All of these I go into depth on in the projects page.</p>
+            I enjoy building Li-ion Battery packs for varius electrical devices and desiging 
+            custom PCB's for small electrical uses. All of these I go into depth on in the 
+            projects page.</p>
             </div>
             </div>
             
-            <!--Header from Footer.html-->
+            <!--Start of Footer.html-->
               <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
               <script>
                 $(function() {

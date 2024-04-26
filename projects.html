@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .links {
-            text-align: center;
-            margin-top: 10px;
-        }
-    </style>
-</head>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Micaiah Landis</title>
+      </head>
+
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-    <div class="container">
-        <section>
-            <h2>My Projects</h2>
-            <!-- Add your projects here -->
-            <p>Coming soon...</p>
-            <div class="links">
-                <p>I am a student at <a href="https://www.emu.edu">EMU</a> and an intern at <a href="https://www.jzengr.com">JZEngineering</a>.</p>
-                <p>Connect with me on <a href="https://www.linkedin.com/in/micaiah-landis-631685273">LinkedIn</a>.</p>
-            </div>
-        </section>
-    </div
+        <!--Start of header.html-->
+        <head>
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script>
+               $(function() {
+                $("#includeHtml").load("header.html");
+               });
+            </script>
+          </head>
+      
+          <div id="includeHtml"></div>
+          <!--End of Header-->
+
+          <h2>Coming Soon</h2>
+
+
+            <!--Start of Footer.html-->
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script>
+              $(function() {
+                 $("#footer").load("footer.html");
+              });
+            </script>
+
+          <div id="footer"></div>
+          <!--End of Footer-->
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Micaiah Landis</title>
+    </head>
+
+
+<body style="background-color:#adb0b8">
+
+    <!--Start of header.html-->
+    <head>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+         $(function() {
+          $("#includeHtml").load("mobile_header.html");
+         });
+      </script>
+    </head>
+
+    <div id="includeHtml"></div>
+    <!--End of Header-->
+
+
+    <!--Main Site-->
+        
+    <!--Start of Grid-->
+    <div class="grid-container">
+    
+    <div>
+        <!--Profile Photo-->
+        <img src="/images/home/profile.jpg" alt="Profile Photo" class="mobile-img">
+
+        
+        <!--Main Text-->
+        <div class="mobile-txt"><p>I am a student at Eastern Mennonite 
+        University pursuing my BS in Engineering. At EMU I am a member of our 
+        Shell Eco Marathon team
+        as well as first chair cellist of the EMU Chamber Orchestra.</p>
+
+        <p>I enjoy designing and 3D printing and have two printers including one I built. 
+        I enjoy building Li-ion Battery packs for varius electrical devices and desiging 
+        custom PCB's for small electrical uses. All of these I go into depth on in the 
+        projects page.</p>
+        </div>
+        
+        <!-- Clearing Element -->
+        <div style="clear: both;"></div>
+    </div>
+        
+        <!--Start of Footer.html-->
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script>
+            $(function() {
+                $("#footer").load("footer.html");
+            });
+            </script>
+
+        <div id="footer"></div>
+        <!--End of Footer-->
+
+
+    </div>
+
+</body>
+</html>
