@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <link href="style.css" rel="stylesheet" type="text/css">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Micaiah Landis</title>
-    </head>
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micaiah Landis</title>
+    <link href="mobile_style.css" rel="stylesheet" type="text/css">
+</head>
 <body style="background-color:#adb0b8">
 
-    <!--Start of header.html-->
-    <head>
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script>
-         $(function() {
-          $("#includeHtml").load("mobile_header.html");
-         });
-      </script>
-    </head>
-
+    <!-- Header -->
     <div id="includeHtml"></div>
-    <!--End of Header-->
 
-
-    <!--Main Site-->
-        
-    <!--Start of Grid-->
-    <div class="grid-container">
-    
-    <div>
-        <!--Profile Photo-->
+    <!-- Main Site -->
+    <div class="box">
+        <!-- Profile Photo -->
         <img src="/images/home/profile.jpg" alt="Profile Photo" class="mobile-img">
-
-        
-        <!--Main Text-->
-        <div class="mobile-txt"><p>I am a student at Eastern Mennonite 
-        University pursuing my BS in Engineering. At EMU I am a member of our 
-        Shell Eco Marathon team
-        as well as first chair cellist of the EMU Chamber Orchestra.</p>
-
+    </div>
+    <div class="mobile-txt">   
+        <!-- Main Text -->
+        <p>I am a student at Eastern Mennonite University pursuing my BS in Engineering. 
+            At EMU I am a member of our Shell Eco Marathon team, first chair cellist of 
+            the EMU Chamber Orchestra and a member of the EMU Mens Triathalon Club team.</p>
         <p>I enjoy designing and 3D printing and have two printers including one I built. 
-        I enjoy building Li-ion Battery packs for varius electrical devices and desiging 
-        custom PCB's for small electrical uses. All of these I go into depth on in the 
-        projects page.</p>
-        </div>
-        
-        <!-- Clearing Element -->
-        <div style="clear: both;"></div>
+            I enjoy building Li-ion Battery packs for various electrical devices and 
+            designing custom PCB's for small electrical uses. All of these I go into 
+            depth on in the projects page.</p>
+        <p>This summer I am working for JZ Engineering as an intern inspecting bridges.
+            Since 2015 JZ Engineering has partnered with Mennonite Disaster Service and
+             West Virginia Voad to design and build residential bridges in places in need.
+             My job will be to travel around West Virginia and inspect the bridges that 
+             were built 5-9 years ago, specifcally looking at rust and rotting on the bridges.
+        </p>
     </div>
-        
-        <!--Start of Footer.html-->
-            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-            <script>
-            $(function() {
-                $("#footer").load("footer.html");
-            });
-            </script>
 
-        <div id="footer"></div>
-        <!--End of Footer-->
+    <!-- Footer -->
+    <div id="footer"></div>
 
-
-    </div>
+    <!-- JavaScript for including header and footer -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+            $("#includeHtml").load("mobile_header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 
 </body>
 </html>

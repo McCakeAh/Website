@@ -23,40 +23,93 @@
     <div id="includeHtml"></div>
     <!--End Header-->
 
-    <!--Start Grid of images and text-->
+    <!--Start images and text-->
+
     <div class="container">
-    <div class="grid-container">
+      <!-- Each section with alternating image and text layout -->
 
-      <!--First Image-->
-      <div class="grid-item"><img src="/images/projects/onewheel/IMG_6606.jpg" 
-      alt="Onewheel" class="onewheel-img"></div>
+      <!--Intro-->
+      <section>
+          <img src="/images/projects/onewheel/IMG_6606.jpg" alt="Intro" class="images" style="float: left;">
+          <p class="about-text">After buying my first onewheel, a onewheel pint in 2022, 
+            I slowling learned that I wanted more range. The onewheel pint delivers plenty of
+            torque but has a limited range of 7 miles. Onewheels with larger range, onewheel 
+            XR and GT cost over $2000. To create a cheaper long range board I decided I wanted
+            to purchase a used onewheel plus due to its low cost, larger size, and most 
+            importantly ability to be easily modified.
+          </p>
+      </section>
 
-      <!--Starting Text-->
-      <div class="grid-item">
-      <p class="project-text">After buying my first onewheel, a onewheel pint in 2022, 
-      I slowling learned that I wanted more range. The onewheel pint delivers plenty of
-      torque but has a limited range of 7 miles. Onewheels with larger range, onewheel 
-      XR and GT cost over $2000. To create a cheaper long range board I decided I wanted
-      to purchase a used onewheel plus due to its low cost, larger size, and most 
-      importantly ability to be easily modified.</p>
-      </div>
+      <!--First Taken Apart-->
+      <section>
+        <img src="/images/projects/onewheel/old/IMG_5282.jpg" alt="Taken Apart" class="images" style="float: right;">
+        <p class="about-text">I found a Onewheel plus on FaceBook Marketplace for $550
+          that included an extra external battery. Since it had an external battery i had no
+          doubt that it's power source could be modified. I needed a Onewheel that would 
+          operate as long as the controller recieved the correct voltage but did not require
+          any communication between motor controller and BMS. The Onewheel plus is only the 
+          second board made by Future Motion and thus did not require any communtication
+          between these two devices.
+        </p>
+    </section>
 
-      <!--First purchase and problems-->
-      <div class="grid-item">
-      <p class="project-text"> I found a Onewheel plus on FaceBook Marketplace for $550
-      that included an extra external battery. Since it had an external battery i had no
-      doubt that it's power source could be modified. I needed a Onewheel that would 
-      operate as long as the controller recieved the correct voltage but did not require
-      any communication between motor controller and BMS. The Onewheel plus is only the 
-      second board made by Future Motion and thus did not require any communtication
-      between these two devices.</p>
-      </div>
+    <!--Problems-->
+    <section>
+      <img src="/images/projects/onewheel/old/IMG_5284.jpg" alt="Problems" class="images" style="float: left;">
+      <p class="about-text">
+        Soon After buying this board, as any engineering may do, I took it apart. 
+        The seller told me that the main battery in the board was not working and he 
+        had added an external ego battery. So the Onewheel did work when I bought it, 
+        but only with the external battery. The seller had supplied an additional Onewheel 
+        battery to replace the current one. This was why I took it apart.
+      </p>
+      <p class="about-text">
+        After swapping the batteries I found that the battery was not the cause of the 
+        need for the external ego battery. After another decontruction and some research
+        I found that the BMS was probably the cause to my problem. This led me to a 
+        more immediate battery build.
+      </p>
+    </section>
 
-      <!--Onewheel plus first taken apart-->
-      <div class="grid-item"><img src="/images/projects/onewheel/old/IMG_5282.jpg"
-      alt="Onewheel plus first taken apart" class="onewheel-img"></div>
+    <!--First Design-->
+    <section>
+      <img src="/images/projects/onewheel/old/IMG_5350.jpg" alt="Pack1" class="images" style="float: right;">
+      <p class="about-text">
+        To build a cheep performant battery I sourced some INR21700M50LT from <a href="https://www.batteryhookup.com" target="_blank">Battery Hookup</a>
+        for about $1.70 per cell. These are 5000 mAh 14.4A max discharge cells. My goal was to build a 14s3p pack allowing 
+        for a max current of 43.2A. I purchased a 100A smart bluetooth BMS to manage the pack. This pack was 756Wh or 15Ah 
+        up from the stock 2.6Ah. 
+      </p>
+    </section>
+
+    <section>
+      <img src="/images/projects/onewheel/old/IMG_5391.jpg" alt="BMS location" class="images" style="float: left;">
+      <p class="about-text">
+        Unfortunatly this pack could not fit inside the normal battery compartment even with my custom 3D printed 
+        Battery box and after market rear bumper from <a href="https://www.thefloatlife.com" target="_blank">The Float Life</a>
+        To accomdate this large pack I placed the BMS on top of the box and made the foot pad go over it. Making 
+        the rear foot pad higher than the front.
+      </p>
+    </section>
+
+    <section>
+      <img src="/images/projects/onewheel/old/IMG_5396.jpg" alt="Fail" class="images" style="float: right;">
+      <p class="about-text">
+        This pack came to a hault when one cell hit its bottom voltage of 2.5V when the rest were still around 3.7V.
+        At its worst along with some bad BMS configurations this caused the board to giveout long before it should 
+        have, while moving 20mph.
+      </p>
+    </section>
     
-    </div>
+    <section>
+      <p class="about-text">
+        I later built a 14s2p pack with P42A cells which are 4200mAh and 45A Max discharge. I also used two 
+        different BMS's and redesigned my battery box to accomdate the battery and the BMS along with a stronger
+        over all design.
+        More Information on this design coming soon...
+      </p>
+    </section>
+
     </div>
 
 
