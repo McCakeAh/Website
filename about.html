@@ -5,33 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-
 </head>
 <body>
 
     <!--Header from header.html-->
-    <head>
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script>
-         $(function() {
-            $("#includeHtml").load("header.html");
-         });
-      </script>
-    </head>
-
     <div id="includeHtml"></div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+       $(function() {
+          $("#includeHtml").load("header.html");
+          $("#footer").load("footer.html");
+       });
+    </script>
     <!--End of Header-->
 
     <div class="container">
+        <!-- Each section with alternating image and text layout -->
         <section>
-            <h2>About Me</h2>
-            <img src="/images/profile.png" alt="My Profile Picture" class="profile-img">
-            <p>I am a student at Eastern Mennonite University pursuing my BS in Engineering. At EMU, I am a member of our Shell Eco Marathon team as well as first chair cellist of the EMU Chamber Orchestra.</p>
-            <div class="links">
-                <p>I am a student at <a href="https://www.emu.edu">EMU</a> and an intern at <a href="https://www.jzengr.com">JZEngineering</a>.</p>
-                <p>Connect with me on <a href="https://www.linkedin.com/in/micaiah-landis-631685273">LinkedIn</a>.</p>
-            </div>
+            <img src="/images/about/690A3336.jpg" alt="Landis Family" class="images" style="float: left;">
+            <p class="about-text">I was born in Harrisonburg Virginia while my dad was in seminary at Eastern Mennonite Seminary. 
+                After finishing his degree my family of my mother father sister and I moved to Croghan NY where
+                I have spent most of my life. Pictured here from left to right is me, my brother Samuel, sister
+                Jessie, Father Ken and Mother Rosetta at our current house in Croghan NY.
+            </p>
+        </section>
+
+        <section>
+            <img src="/images/about/5G6A5479.JPG" alt="Image Description" class="images" style="float: right;">
+            <p class="about-text">One of my hobbies I have enjoyed for several years is road cycling. Since I started cycling I have
+                biked in several bike rides/races and completed 5 centuries (100miles) with groups and by myself.
+                My father got me into cycling and keeps my trying to stay faster than him, even though he is 31 
+                years older than me.
+            </p>
+        </section>
+
+        <section>
+            <img src="/images/about/690A0003.JPEG" alt="Image Description" class="images" style="float: left;">
+            <p>Your text here for the third image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_0948.JPG" alt="Image Description" class="images" style="float: right;">
+            <p>Your text here for the fourth image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_0951.JPG" alt="Image Description" class="images" style="float: left;">
+            <p>Your text here for the fifth image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_0993.JPG" alt="Image Description" class="images" style="float: right;">
+            <p>Your text here for the sixth image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_2875.jpg" alt="Image Description" class="images" style="float: left;">
+            <p>Your text here for the seventh image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_6595.jpg" alt="Image Description" class="images" style="float: right;">
+            <p>Your text here for the eighth image.</p>
+        </section>
+
+        <section>
+            <img src="/images/about/IMG_6877.JPG" alt="Image Description" class="images" style="float: left;">
+            <p>Your text here for the ninth image.</p>
         </section>
     </div>
+
+    <div id="footer"></div>
 </body>
 </html>
